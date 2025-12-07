@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { CheckCircle, Shield, Clock, ArrowRight, ArrowLeft, Home, MoveUp, User, Mail } from "lucide-react";
+import { CheckCircle, Shield, Clock, ArrowRight, ArrowLeft, Home, MoveUp, User, Mail, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 type StepData = {
   typeEscalier: string;
@@ -19,7 +22,10 @@ type StepData = {
 const TOTAL_STEPS = 5;
 
 const LeadForm = () => {
+  const navigate = useNavigate();
+  const { toast } = useToast();
   const [currentStep, setCurrentStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<StepData>({
     typeEscalier: "",
     nombreEtages: "",
@@ -97,9 +103,38 @@ const LeadForm = () => {
     }
   };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData);
-    // Form submission logic will be added later
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke('send-lead', {
+        body: {
+          staircaseType: formData.typeEscalier === "droit" ? "straight" : "curved",
+          floors: formData.nombreEtages,
+          taxable: formData.imposable === "oui" ? "yes" : "no",
+          over70: formData.plusDe70Ans === "oui" ? "yes" : "no",
+          firstName: formData.prenom,
+          lastName: formData.nom,
+          email: formData.email,
+          phone: formData.telephone,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      navigate('/confirmation');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleOptionSelect = (field: keyof StepData, value: string) => {
@@ -446,9 +481,15 @@ const LeadForm = () => {
             type="button"
             variant="hero"
             onClick={handleNext}
+            disabled={isSubmitting}
             className={cn("h-12", currentStep === 1 ? "w-full" : "flex-1")}
           >
-            {currentStep === TOTAL_STEPS ? (
+            {isSubmitting ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Envoi en cours...
+              </>
+            ) : currentStep === TOTAL_STEPS ? (
               "Estimer mon aide maintenant"
             ) : (
               <>
