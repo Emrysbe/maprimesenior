@@ -53,12 +53,12 @@ const Confirmation = () => {
 
             {/* Contact info */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a 
-                href="tel:+33100000000" 
+              <a
+                href="tel:+33617526836"
                 className="flex items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span className="font-medium">01 00 00 00 00</span>
+                <span className="font-medium">06 17 52 68 36</span>
               </a>
               <a 
                 href="mailto:contact@maprimeadapt.fr" 

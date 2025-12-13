@@ -20,10 +20,10 @@ const Footer = () => {
               Contact
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-sm">
+              <a href="tel:+33617526836" className="flex items-center gap-2 text-sm hover:text-primary-foreground transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>01 XX XX XX XX</span>
-              </div>
+                <span>06 17 52 68 36</span>
+              </a>
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4" />
                 <span>contact@exemple.fr</span>
