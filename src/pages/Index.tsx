@@ -7,17 +7,19 @@ import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>MaPrimeAdapt' Monte-Escalier | Estimez votre aide jusqu'à 70%</title>
-        <meta 
-          name="description" 
-          content="Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide pour financer un monte-escalier. Jusqu'à 70% du coût pris en charge par l'État." 
+        <title>MaPrimeAdapt' Monte-Escalier | Des aides jusqu'à 22 000 € pour l'installation</title>
+        <meta
+          name="description"
+          content="Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide pour financer un monte-escalier. Des aides jusqu'à 22 000 € pour améliorer votre autonomie à domicile. Estimation gratuite en 2 minutes."
         />
       </Helmet>
+      <StructuredData />
       
       <main>
         <HeroSection />

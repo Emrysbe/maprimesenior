@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl mt-8">
               <img
                 src={stairliftHero}
-                alt="Monte-escalier moderne installé dans une maison"
+                alt="Monte-escalier moderne et sécurisé installé dans une maison - Financement MaPrimeAdapt' jusqu'à 22 000 €"
                 className="w-full h-64 md:h-80 object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 to-transparent p-6">

@@ -5,9 +5,9 @@ import { CheckCircle } from "lucide-react";
 
 const GallerySection = () => {
   const images = [
-    { src: gallery1, alt: "Monte-escalier droit installé" },
-    { src: gallery2, alt: "Monte-escalier extérieur" },
-    { src: gallery3, alt: "Monte-escalier compact" },
+    { src: gallery1, alt: "Installation d'un monte-escalier droit pour personne à mobilité réduite - Financement MaPrimeAdapt'" },
+    { src: gallery2, alt: "Monte-escalier extérieur adapté pour l'autonomie des seniors - Aide de l'État disponible" },
+    { src: gallery3, alt: "Monte-escalier compact et design pour petit espace - Solution d'accessibilité domicile" },
   ];
 
   return (
