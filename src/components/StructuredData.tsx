@@ -74,6 +74,14 @@ const StructuredData = () => {
       },
       {
         "@type": "Question",
+        "name": "Comment choisir son monte-escalier ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le choix d'un monte-escalier dépend de 5 critères essentiels : le type d'escalier (droit, tournant ou extérieur), le niveau de mobilité de l'utilisateur, l'espace disponible dans le logement, le budget et les aides financières disponibles, et l'installation par un professionnel qualifié. Un diagnostic gratuit à domicile permet d'identifier la solution la plus adaptée à votre situation."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Qui peut bénéficier de MaPrimeAdapt' ?",
         "acceptedAnswer": {
           "@type": "Answer",

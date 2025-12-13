@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TrustLogos from "@/components/TrustLogos";
 import MaPrimeAdaptSection from "@/components/MaPrimeAdaptSection";
 import WhyStairliftSection from "@/components/WhyStairliftSection";
+import HowToChooseSection from "@/components/HowToChooseSection";
 import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTASection from "@/components/FinalCTASection";
@@ -26,6 +27,7 @@ const Index = () => {
         <TrustLogos />
         <MaPrimeAdaptSection />
         <WhyStairliftSection />
+        <HowToChooseSection />
         <GallerySection />
         <TestimonialsSection />
         <FinalCTASection />
