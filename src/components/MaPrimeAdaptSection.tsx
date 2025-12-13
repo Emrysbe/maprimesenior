@@ -5,8 +5,8 @@ const MaPrimeAdaptSection = () => {
   const features = [
     {
       icon: Euro,
-      title: "Jusqu'à 22 000€ d'aides",
-      description: "L'État peut prendre en charge jusqu'à 70% du coût de votre monte-escalier, soit jusqu'à 22 000€ selon vos revenus.",
+      title: "Financement jusqu'à 70%",
+      description: "L'État peut prendre en charge jusqu'à 70% du coût de votre monte-escalier selon vos revenus.",
     },
     {
       icon: Users,
@@ -35,11 +35,11 @@ const MaPrimeAdaptSection = () => {
             Aide de l'État
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            MaPrimeAdapt' : Jusqu'à 22 000€ pour votre monte-escalier
+            Qu'est-ce que MaPrimeAdapt' ?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une aide gouvernementale qui peut couvrir jusqu'à 70% du coût de votre monte-escalier.{" "}
-            <span className="font-semibold text-foreground">Vérifiez votre éligibilité en moins de 2 minutes.</span>
+            Une aide gouvernementale pour adapter votre logement à la perte d'autonomie 
+            et financer l'installation d'équipements comme un monte-escalier.
           </p>
         </div>
 

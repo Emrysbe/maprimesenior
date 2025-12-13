@@ -25,21 +25,19 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
-              Obtenez jusqu'à{" "}
-              <span className="text-primary text-4xl md:text-5xl lg:text-6xl">22 000€</span>{" "}
-              d'aides pour votre monte-escalier
+              Vérifiez votre éligibilité à{" "}
+              <span className="text-primary">MaPrimeAdapt'</span>{" "}
+              et estimez le montant de votre aide
             </h1>
 
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary rounded-lg p-4 md:p-6">
-              <p className="text-lg md:text-xl font-semibold text-foreground mb-2">
-                Estimation gratuite en moins de 2 minutes
-              </p>
-              <p className="text-base text-muted-foreground">
-                L'État finance jusqu'à{" "}
-                <span className="font-bold text-secondary">70% du coût</span>{" "}
-                de votre monte-escalier avec MaPrimeAdapt'
-              </p>
-            </div>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Jusqu'à{" "}
+              <span className="font-bold text-secondary">50 à 70%</span>{" "}
+              du coût d'un monte-escalier financé par l'État –{" "}
+              <span className="font-semibold text-foreground">
+                estimation gratuite et sans engagement.
+              </span>
+            </p>
 
             {/* Hero Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl mt-8">
