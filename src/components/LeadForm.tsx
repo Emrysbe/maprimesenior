@@ -453,9 +453,14 @@ const LeadForm = () => {
   return (
     <div id="lead-form" className="bg-card rounded-2xl shadow-xl p-6 md:p-8 border border-border/50">
       <div className="mb-4">
-        <div className="inline-flex items-center gap-2 bg-success-light text-success px-3 py-1.5 rounded-full text-sm font-medium mb-4">
-          <CheckCircle className="w-4 h-4" />
-          Estimation gratuite et sans engagement
+        <div className="space-y-2">
+          <div className="inline-flex items-center gap-2 bg-success-light text-success px-3 py-1.5 rounded-full text-sm font-medium">
+            <CheckCircle className="w-4 h-4" />
+            Estimation en moins de 2 minutes
+          </div>
+          <div className="text-2xl font-bold text-primary">
+            Aide jusqu'à 22 000€
+          </div>
         </div>
       </div>
 
