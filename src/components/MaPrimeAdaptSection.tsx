@@ -21,7 +21,10 @@ const MaPrimeAdaptSection = () => {
   ];
 
   const scrollToForm = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const formElement = document.getElementById('lead-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   };
 
   return (
