@@ -24,10 +24,10 @@ const Footer = () => {
                 <Phone className="w-4 h-4" />
                 <span>06 17 52 68 36</span>
               </a>
-              <div className="flex items-center gap-2 text-sm">
+              <a href="mailto:monaideauxsenior@gmail.com" className="flex items-center gap-2 text-sm hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>contact@exemple.fr</span>
-              </div>
+                <span>monaideauxsenior@gmail.com</span>
+              </a>
             </div>
           </div>
 

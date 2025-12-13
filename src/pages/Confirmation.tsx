@@ -60,12 +60,12 @@ const Confirmation = () => {
                 <Phone className="w-5 h-5" />
                 <span className="font-medium">06 17 52 68 36</span>
               </a>
-              <a 
-                href="mailto:contact@maprimeadapt.fr" 
+              <a
+                href="mailto:monaideauxsenior@gmail.com"
                 className="flex items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span className="font-medium">contact@maprimeadapt.fr</span>
+                <span className="font-medium">monaideauxsenior@gmail.com</span>
               </a>
             </div>
 
