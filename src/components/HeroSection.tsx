@@ -25,9 +25,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
-              Vérifiez votre éligibilité aux aides jusqu'à{" "}
-              <span className="text-primary text-4xl md:text-5xl lg:text-6xl">22 000€</span>{" "}
-              pour votre monte-escalier
+              Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide
             </h1>
 
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary rounded-lg p-4 md:p-6">
