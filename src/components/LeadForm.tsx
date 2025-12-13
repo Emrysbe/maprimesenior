@@ -459,7 +459,7 @@ const LeadForm = () => {
             Estimation en moins de 2 minutes
           </div>
           <div className="text-2xl font-bold text-primary">
-            Aide jusqu'à 22 000€
+            Des aides jusqu'à 22 000 €
           </div>
         </div>
       </div>
