@@ -19,14 +19,18 @@ const FinalCTASection = () => {
 
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-block bg-secondary text-secondary-foreground px-6 py-3 rounded-2xl text-4xl md:text-5xl font-extrabold mb-6 shadow-2xl">
+            Jusqu'à 22 000€ d'aides
+          </div>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
-            Votre aide peut couvrir jusqu'à{" "}
-            <span className="text-secondary-foreground bg-secondary px-3 py-1 rounded-lg">70%</span>{" "}
-            du prix
+            L'État finance jusqu'à{" "}
+            <span className="text-secondary-foreground bg-secondary/80 px-3 py-1 rounded-lg">70%</span>{" "}
+            de votre monte-escalier
           </h2>
-          
+
           <p className="text-xl text-primary-foreground/90 mb-8">
-            Découvrez votre montant en 2 minutes. Estimation gratuite et sans engagement.
+            Estimation en moins de 2 minutes. Gratuite et sans engagement.
           </p>
 
           <Button 
