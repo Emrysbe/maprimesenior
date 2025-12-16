@@ -12,17 +12,22 @@ const Header = () => {
             </h1>
           </div>
 
-          <Button
-            asChild
-            size="sm"
-            className="gap-2 bg-primary hover:bg-primary/90 text-white font-semibold"
-          >
-            <a href="tel:0617526836">
-              <Phone className="w-4 h-4" />
-              <span className="hidden sm:inline">06 17 52 68 36</span>
-              <span className="sm:hidden">Appeler</span>
-            </a>
-          </Button>
+          <div className="flex items-center gap-3">
+            <span className="hidden md:inline text-sm font-medium text-foreground">
+              Appel gratuit
+            </span>
+            <Button
+              asChild
+              size="sm"
+              className="gap-2 bg-primary hover:bg-primary/90 text-white font-semibold"
+            >
+              <a href="tel:0617526836">
+                <Phone className="w-4 h-4" />
+                <span className="hidden sm:inline">06 17 52 68 36</span>
+                <span className="sm:hidden">Appeler</span>
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </header>
