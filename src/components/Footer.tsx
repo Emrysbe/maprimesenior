@@ -33,11 +33,17 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-bold text-primary-foreground mb-4">
-              Accompagnement
+              Certifications
             </h3>
-            <div className="flex items-center gap-2 text-sm">
-              <Shield className="w-4 h-4 text-success" />
-              <span>AMO certifiés par l'ANAH</span>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-sm">
+                <Shield className="w-4 h-4 text-success" />
+                <span>AMO certifiés par l'ANAH</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <Shield className="w-4 h-4 text-success" />
+                <span>Installateurs certifiés Handibat/Silverbat</span>
+              </div>
             </div>
           </div>
         </div>

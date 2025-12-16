@@ -1,4 +1,4 @@
-import { Shield, CheckCircle2, Star } from "lucide-react";
+import { Shield, CheckCircle2, Star, Award } from "lucide-react";
 
 const TrustLogos = () => {
   const trustItems = [
@@ -6,6 +6,11 @@ const TrustLogos = () => {
       icon: Shield,
       label: "AMO certifiés",
       sublabel: "Par l'ANAH",
+    },
+    {
+      icon: Award,
+      label: "Installateurs certifiés",
+      sublabel: "Handibat/Silverbat",
     },
     {
       icon: CheckCircle2,
@@ -22,7 +27,7 @@ const TrustLogos = () => {
   return (
     <section className="py-8 md:py-12 bg-trust border-y border-trust-border">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {trustItems.map((item, index) => (
             <div
               key={index}
