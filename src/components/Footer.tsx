@@ -33,11 +33,11 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-bold text-primary-foreground mb-4">
-              Certifications
+              Accompagnement
             </h3>
             <div className="flex items-center gap-2 text-sm">
               <Shield className="w-4 h-4 text-success" />
-              <span>Installateurs certifiés RGE</span>
+              <span>AMO certifiés par l'ANAH</span>
             </div>
           </div>
         </div>

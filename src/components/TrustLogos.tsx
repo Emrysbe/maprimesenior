@@ -1,16 +1,11 @@
-import { Shield, Award, CheckCircle2, Star } from "lucide-react";
+import { Shield, CheckCircle2, Star } from "lucide-react";
 
 const TrustLogos = () => {
   const trustItems = [
     {
       icon: Shield,
-      label: "France Rénov'",
-      sublabel: "Partenaire officiel",
-    },
-    {
-      icon: Award,
-      label: "Certifié RGE",
-      sublabel: "Installateurs qualifiés",
+      label: "AMO certifiés",
+      sublabel: "Par l'ANAH",
     },
     {
       icon: CheckCircle2,
@@ -27,7 +22,7 @@ const TrustLogos = () => {
   return (
     <section className="py-8 md:py-12 bg-trust border-y border-trust-border">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {trustItems.map((item, index) => (
             <div
               key={index}
@@ -50,7 +45,7 @@ const TrustLogos = () => {
         </div>
 
         <p className="text-center text-sm text-muted-foreground mt-6 md:mt-8">
-          Installateurs certifiés RGE – partenaires des principaux fabricants – 
+          Accompagnement par des experts certifiés – partenaires des principaux fabricants –
           <span className="font-semibold text-foreground"> 4.9/5 satisfaction clients</span>
         </p>
       </div>
