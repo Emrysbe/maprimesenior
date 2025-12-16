@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustLogos from "@/components/TrustLogos";
 import MaPrimeAdaptSection from "@/components/MaPrimeAdaptSection";
@@ -21,8 +22,9 @@ const Index = () => {
         />
       </Helmet>
       <StructuredData />
-      
-      <main>
+      <Header />
+
+      <main className="pt-16">
         <HeroSection />
         <TrustLogos />
         <MaPrimeAdaptSection />
