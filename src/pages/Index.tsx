@@ -17,23 +17,28 @@ const Index = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const scrollToElement = () => {
-      if (!location.hash) {
-        window.scrollTo({ top: 0, behavior: "auto" });
-        return;
-      }
+    if (!location.hash) {
+      window.scrollTo({ top: 0, behavior: "auto" });
+      return;
+    }
 
-      const id = location.hash.replace('#', '');
+    const id = location.hash.replace('#', '');
+
+    const scrollToTarget = () => {
       const element = document.getElementById(id);
-
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       }
     };
 
-    const timer = setTimeout(scrollToElement, 200);
+    const timer = setTimeout(scrollToTarget, 100);
     return () => clearTimeout(timer);
   }, [location]);
 
