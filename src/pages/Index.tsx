@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustLogos from "@/components/TrustLogos";
@@ -13,39 +14,32 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    const scrollToHash = () => {
-      const hash = window.location.hash;
-      if (hash) {
-        const id = hash.replace('#', '');
-        const element = document.getElementById(id);
+    const scrollToSection = (hash: string, attempt = 0) => {
+      if (!hash) return;
 
-        if (element) {
-          const headerOffset = 80;
-          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-          const offsetPosition = elementPosition - headerOffset;
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-          });
-        }
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else if (attempt < 10) {
+        setTimeout(() => scrollToSection(hash, attempt + 1), 100);
       }
     };
 
-    const timeoutId = setTimeout(scrollToHash, 500);
+    if (location.hash) {
+      const timeouts = [100, 300, 500, 1000].map(delay =>
+        setTimeout(() => scrollToSection(location.hash), delay)
+      );
 
-    const handleHashChange = () => {
-      setTimeout(scrollToHash, 100);
-    };
-
-    window.addEventListener('hashchange', handleHashChange, false);
-
-    return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener('hashchange', handleHashChange);
-    };
-  }, []);
+      return () => timeouts.forEach(clearTimeout);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <>
