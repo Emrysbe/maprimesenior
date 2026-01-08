@@ -14,15 +14,37 @@ import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
   useEffect(() => {
-    if (window.location.hash) {
-      const id = window.location.hash.substring(1);
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+
+        if (element) {
+          const headerOffset = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
       }
-    }
+    };
+
+    const timeoutId = setTimeout(scrollToHash, 500);
+
+    const handleHashChange = () => {
+      setTimeout(scrollToHash, 100);
+    };
+
+    window.addEventListener('hashchange', handleHashChange, false);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   }, []);
 
   return (
