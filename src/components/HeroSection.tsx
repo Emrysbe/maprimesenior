@@ -24,7 +24,7 @@ const HeroSection = () => {
               MaPrimeAdapt' 2024
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
+            <h1 id="devis" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
               Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide
             </h1>
 

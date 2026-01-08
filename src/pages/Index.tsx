@@ -17,28 +17,24 @@ const Index = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const scrollToSection = (hash: string, attempt = 0) => {
-      if (!hash) return;
+    const scrollToElement = () => {
+      if (!location.hash) {
+        window.scrollTo({ top: 0, behavior: "auto" });
+        return;
+      }
 
-      const id = hash.replace('#', '');
+      const id = location.hash.replace('#', '');
       const element = document.getElementById(id);
 
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      } else if (attempt < 10) {
-        setTimeout(() => scrollToSection(hash, attempt + 1), 100);
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
       }
     };
 
-    if (location.hash) {
-      const timeouts = [100, 300, 500, 1000].map(delay =>
-        setTimeout(() => scrollToSection(location.hash), delay)
-      );
-
-      return () => timeouts.forEach(clearTimeout);
-    } else {
-      window.scrollTo(0, 0);
-    }
+    const timer = setTimeout(scrollToElement, 200);
+    return () => clearTimeout(timer);
   }, [location]);
 
   return (
@@ -54,28 +50,14 @@ const Index = () => {
       <Header />
 
       <main className="pt-16">
-        <div id="devis">
-          <HeroSection />
-        </div>
+        <HeroSection />
         <TrustLogos />
-        <div id="aides">
-          <MaPrimeAdaptSection />
-        </div>
-        <div id="avantages">
-          <WhyStairliftSection />
-        </div>
-        <div id="choisir">
-          <HowToChooseSection />
-        </div>
-        <div id="galerie">
-          <GallerySection />
-        </div>
-        <div id="avis">
-          <TestimonialsSection />
-        </div>
-        <div id="contact">
-          <FinalCTASection />
-        </div>
+        <MaPrimeAdaptSection />
+        <WhyStairliftSection />
+        <HowToChooseSection />
+        <GallerySection />
+        <TestimonialsSection />
+        <FinalCTASection />
         <Footer />
       </main>
     </>

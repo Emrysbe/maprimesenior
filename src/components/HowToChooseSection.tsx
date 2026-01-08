@@ -91,7 +91,7 @@ const HowToChooseSection = () => {
           <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
             Guide d'achat
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 id="choisir" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Comment choisir son monte-escalier ?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">

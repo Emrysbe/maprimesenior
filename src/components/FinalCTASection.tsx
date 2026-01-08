@@ -23,7 +23,7 @@ const FinalCTASection = () => {
             Jusqu'à 22 000€ d'aides
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h2 id="contact" className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
             L'État finance jusqu'à{" "}
             <span className="text-secondary-foreground bg-secondary/80 px-3 py-1 rounded-lg">70%</span>{" "}
             de votre monte-escalier

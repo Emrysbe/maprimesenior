@@ -34,7 +34,7 @@ const MaPrimeAdaptSection = () => {
           <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
             Aide de l'État
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 id="aides" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             MaPrimeAdapt' : Jusqu'à 22 000€ pour votre monte-escalier
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
