@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustLogos from "@/components/TrustLogos";
@@ -12,6 +13,18 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -25,14 +38,28 @@ const Index = () => {
       <Header />
 
       <main className="pt-16">
-        <HeroSection />
+        <div id="devis">
+          <HeroSection />
+        </div>
         <TrustLogos />
-        <MaPrimeAdaptSection />
-        <WhyStairliftSection />
-        <HowToChooseSection />
-        <GallerySection />
-        <TestimonialsSection />
-        <FinalCTASection />
+        <div id="aides">
+          <MaPrimeAdaptSection />
+        </div>
+        <div id="avantages">
+          <WhyStairliftSection />
+        </div>
+        <div id="choisir">
+          <HowToChooseSection />
+        </div>
+        <div id="galerie">
+          <GallerySection />
+        </div>
+        <div id="avis">
+          <TestimonialsSection />
+        </div>
+        <div id="contact">
+          <FinalCTASection />
+        </div>
         <Footer />
       </main>
     </>
