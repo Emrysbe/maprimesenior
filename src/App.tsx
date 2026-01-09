@@ -7,6 +7,11 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
+import Blog from "./pages/Blog";
+import MaPrimeAdapt2024 from "./pages/blog/MaPrimeAdapt2024";
+import ChoisirMonteEscalier from "./pages/blog/ChoisirMonteEscalier";
+import AmenagementsSeniors from "./pages/blog/AmenagementsSeniors";
+import InstallationMonteEscalier from "./pages/blog/InstallationMonteEscalier";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +25,11 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/confirmation" element={<Confirmation />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/maprimeadapt-2024-guide-complet-aides-monte-escalier" element={<MaPrimeAdapt2024 />} />
+            <Route path="/blog/choisir-monte-escalier-droit-tournant-guide" element={<ChoisirMonteEscalier />} />
+            <Route path="/blog/amenagements-essentiels-seniors-autonomie-domicile" element={<AmenagementsSeniors />} />
+            <Route path="/blog/installation-monte-escalier-guide-pratique" element={<InstallationMonteEscalier />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
