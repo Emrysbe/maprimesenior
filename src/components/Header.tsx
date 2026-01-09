@@ -12,7 +12,6 @@ const Header = () => {
     { href: "/#avantages", label: "Avantages" },
     { href: "/#choisir", label: "Guide" },
     { href: "/#avis", label: "Avis" },
-    { href: "/blog", label: "Blog" },
   ];
 
   return (
