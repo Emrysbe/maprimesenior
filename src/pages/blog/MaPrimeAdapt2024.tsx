@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/photo_blog_ma_prime_adapt.png";
 
 const MaPrimeAdapt2024 = () => {
   return (
@@ -36,7 +37,7 @@ const MaPrimeAdapt2024 = () => {
                     MaPrimeAdapt' 2024 : Guide Complet des Aides pour Votre Monte-Escalier
                   </h1>
                   <img
-                    src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src={blogImage}
                     alt="Aide MaPrimeAdapt' pour monte-escalier"
                     className="w-full rounded-lg mb-6"
                   />

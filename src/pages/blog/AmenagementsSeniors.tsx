@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/photo_blog_autonomie_a_domicile_.jpg";
 
 const AmenagementsSeniors = () => {
   return (
@@ -36,7 +37,7 @@ const AmenagementsSeniors = () => {
                     Autonomie à Domicile : 5 Aménagements Essentiels pour les Seniors
                   </h1>
                   <img
-                    src="https://images.pexels.com/photos/7551662/pexels-photo-7551662.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src={blogImage}
                     alt="Aménagement domicile seniors"
                     className="w-full rounded-lg mb-6"
                   />

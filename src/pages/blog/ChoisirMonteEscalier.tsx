@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/photo_blog_monte_escalier_droit_ou_tournant_.jpg";
 
 const ChoisirMonteEscalier = () => {
   return (
@@ -36,7 +37,7 @@ const ChoisirMonteEscalier = () => {
                     Monte-Escalier Droit ou Tournant : Comment Choisir le Modèle Adapté
                   </h1>
                   <img
-                    src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src={blogImage}
                     alt="Escalier droit et tournant"
                     className="w-full rounded-lg mb-6"
                   />

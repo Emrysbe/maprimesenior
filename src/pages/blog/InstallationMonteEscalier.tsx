@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
+import blogImage from "@/assets/photo_blog_installation_monte_escalier_.jpg";
 
 const InstallationMonteEscalier = () => {
   return (
@@ -36,7 +37,7 @@ const InstallationMonteEscalier = () => {
                     Installation d'un Monte-Escalier : Guide Pratique Complet
                   </h1>
                   <img
-                    src="https://images.pexels.com/photos/7195087/pexels-photo-7195087.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src={blogImage}
                     alt="Installation monte-escalier"
                     className="w-full rounded-lg mb-6"
                   />
