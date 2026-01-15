@@ -4,6 +4,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
+import maPrimeAdaptImage from "@/assets/photo_blog_ma_prime_adapt.png";
+import monteEscalierImage from "@/assets/photo_blog_monte_escalier_droit_ou_tournant_.jpg";
+import autonomieImage from "@/assets/photo_blog_autonomie_a_domicile_.jpg";
+import installationImage from "@/assets/photo_blog_installation_monte_escalier_.jpg";
 
 const blogPosts = [
   {
@@ -11,28 +15,28 @@ const blogPosts = [
     title: "MaPrimeAdapt' 2024 : Guide Complet des Aides pour Votre Monte-Escalier",
     excerpt: "Découvrez comment financer votre monte-escalier avec MaPrimeAdapt' 2024. Guide complet des conditions, montants et démarches pour obtenir jusqu'à 70% d'aide.",
     publishedAt: "5 janvier 2026",
-    imageUrl: "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl: maPrimeAdaptImage,
   },
   {
     slug: "choisir-monte-escalier-droit-tournant-guide",
     title: "Monte-Escalier Droit ou Tournant : Comment Choisir le Modèle Adapté",
     excerpt: "Droit ou tournant ? Découvrez les différences, avantages et critères de choix pour sélectionner le monte-escalier parfaitement adapté à votre escalier et vos besoins.",
     publishedAt: "28 décembre 2025",
-    imageUrl: "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl: monteEscalierImage,
   },
   {
     slug: "amenagements-essentiels-seniors-autonomie-domicile",
     title: "Autonomie à Domicile : 5 Aménagements Essentiels pour les Seniors",
     excerpt: "Au-delà du monte-escalier, découvrez les aménagements indispensables pour maintenir votre autonomie à domicile : salle de bain, cuisine, accès et plus encore.",
     publishedAt: "15 décembre 2025",
-    imageUrl: "https://images.pexels.com/photos/7551662/pexels-photo-7551662.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl: autonomieImage,
   },
   {
     slug: "installation-monte-escalier-guide-pratique",
     title: "Installation d'un Monte-Escalier : Guide Pratique Complet",
     excerpt: "Tout ce qu'il faut savoir sur l'installation d'un monte-escalier : durée, étapes, préparation de votre domicile et conseils d'experts pour un projet réussi.",
     publishedAt: "5 décembre 2025",
-    imageUrl: "https://images.pexels.com/photos/7195087/pexels-photo-7195087.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageUrl: installationImage,
   },
 ];
 
