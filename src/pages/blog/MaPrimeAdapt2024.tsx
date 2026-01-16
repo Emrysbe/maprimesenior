@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
-import blogImage from "@/assets/photo_blog_ma_prime_adapt.png";
+import blogImage from "@/assets/image_ma_prime_adapt_2.jpg";
 
 const MaPrimeAdapt2024 = () => {
   return (

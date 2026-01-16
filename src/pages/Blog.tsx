@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
-import maPrimeAdaptImage from "@/assets/photo_blog_ma_prime_adapt.png";
+import maPrimeAdaptImage from "@/assets/image_ma_prime_adapt_2.jpg";
 import monteEscalierImage from "@/assets/photo_blog_monte_escalier_droit_ou_tournant_.jpg";
 import autonomieImage from "@/assets/photo_blog_autonomie_a_domicile_.jpg";
 import installationImage from "@/assets/photo_blog_installation_monte_escalier_.jpg";
