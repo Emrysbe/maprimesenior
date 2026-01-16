@@ -39,7 +39,7 @@ const MaPrimeAdapt2024 = () => {
                   <img
                     src={blogImage}
                     alt="Aide MaPrimeAdapt' pour monte-escalier"
-                    className="w-full rounded-lg mb-6"
+                    className="w-full max-w-2xl mx-auto rounded-lg mb-6"
                   />
                 </header>
 

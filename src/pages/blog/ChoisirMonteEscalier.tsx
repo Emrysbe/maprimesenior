@@ -39,7 +39,7 @@ const ChoisirMonteEscalier = () => {
                   <img
                     src={blogImage}
                     alt="Escalier droit et tournant"
-                    className="w-full rounded-lg mb-6"
+                    className="w-full max-w-2xl mx-auto rounded-lg mb-6"
                   />
                 </header>
 
