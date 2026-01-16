@@ -1,4 +1,5 @@
 import { Shield, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -51,6 +52,14 @@ const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm">
           <p>
             © {new Date().getFullYear()} MaPrimeAdapt' Monte-Escalier. Tous droits réservés.
+          </p>
+          <p className="mt-2">
+            <Link
+              to="/politique-de-confidentialite"
+              className="text-primary-foreground/80 hover:text-primary-foreground underline transition-colors"
+            >
+              Politique de confidentialité
+            </Link>
           </p>
           <p className="mt-2 text-xs text-primary-foreground/60">
             Ce site n'est pas un site officiel du gouvernement. Nous sommes un service d'accompagnement indépendant.

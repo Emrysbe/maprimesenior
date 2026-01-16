@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
 import Blog from "./pages/Blog";
+import Privacy from "./pages/Privacy";
 import MaPrimeAdapt2024 from "./pages/blog/MaPrimeAdapt2024";
 import ChoisirMonteEscalier from "./pages/blog/ChoisirMonteEscalier";
 import AmenagementsSeniors from "./pages/blog/AmenagementsSeniors";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/politique-de-confidentialite" element={<Privacy />} />
             <Route path="/blog/maprimeadapt-2024-guide-complet-aides-monte-escalier" element={<MaPrimeAdapt2024 />} />
             <Route path="/blog/choisir-monte-escalier-droit-tournant-guide" element={<ChoisirMonteEscalier />} />
             <Route path="/blog/amenagements-essentiels-seniors-autonomie-domicile" element={<AmenagementsSeniors />} />
