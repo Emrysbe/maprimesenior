@@ -1,1 +1,7 @@
 project_id = "qikhddwzyztueutjfiag"
+
+[auth]
+# Use percentage-based connection allocation strategy
+# This allows the Auth server to scale with instance size
+# Default: 10% of max connections for Auth
+pool_size = "10%"
