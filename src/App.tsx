@@ -13,6 +13,7 @@ import MaPrimeAdapt2024 from "./pages/blog/MaPrimeAdapt2024";
 import ChoisirMonteEscalier from "./pages/blog/ChoisirMonteEscalier";
 import AmenagementsSeniors from "./pages/blog/AmenagementsSeniors";
 import InstallationMonteEscalier from "./pages/blog/InstallationMonteEscalier";
+import DoucheSeniorMaPrimeAdapt from "./pages/blog/DoucheSeniorMaPrimeAdapt";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/politique-de-confidentialite" element={<Privacy />} />
+            <Route path="/blog/douche-senior-ma-prime-adapt-guide-complet" element={<DoucheSeniorMaPrimeAdapt />} />
             <Route path="/blog/maprimeadapt-2024-guide-complet-aides-monte-escalier" element={<MaPrimeAdapt2024 />} />
             <Route path="/blog/choisir-monte-escalier-droit-tournant-guide" element={<ChoisirMonteEscalier />} />
             <Route path="/blog/amenagements-essentiels-seniors-autonomie-domicile" element={<AmenagementsSeniors />} />

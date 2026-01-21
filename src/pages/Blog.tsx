@@ -11,6 +11,13 @@ import installationImage from "@/assets/photo_blog_installation_monte_escalier_.
 
 const blogPosts = [
   {
+    slug: "douche-senior-ma-prime-adapt-guide-complet",
+    title: "Douche Senior Ma Prime Adapt' : Tout Ce Qu'il Faut Savoir en 2024",
+    excerpt: "Remplacez votre baignoire par une douche sécurisée senior avec Ma Prime Adapt'. Jusqu'à 70% d'aide financière pour vos travaux de salle de bain. Guide complet et accompagnement gratuit.",
+    publishedAt: "21 janvier 2026",
+    imageUrl: "https://images.pexels.com/photos/6315801/pexels-photo-6315801.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
     slug: "maprimeadapt-2024-guide-complet-aides-monte-escalier",
     title: "MaPrimeAdapt' 2024 : Guide Complet des Aides pour Votre Monte-Escalier",
     excerpt: "Découvrez comment financer votre monte-escalier avec MaPrimeAdapt' 2024. Guide complet des conditions, montants et démarches pour obtenir jusqu'à 70% d'aide.",
