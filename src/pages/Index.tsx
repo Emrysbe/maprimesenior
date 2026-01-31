@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustLogos from "@/components/TrustLogos";
-import MaPrimeAdaptSection from "@/components/MaPrimeAdaptSection";
 import WhyStairliftSection from "@/components/WhyStairliftSection";
 import HowToChooseSection from "@/components/HowToChooseSection";
 import GallerySection from "@/components/GallerySection";
@@ -57,7 +56,6 @@ const Index = () => {
       <main className="pt-16">
         <HeroSection />
         <TrustLogos />
-        <MaPrimeAdaptSection />
         <WhyStairliftSection />
         <HowToChooseSection />
         <GallerySection />
