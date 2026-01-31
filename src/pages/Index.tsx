@@ -48,7 +48,7 @@ const Index = () => {
         <title>MaPrimeAdapt' Monte-Escalier | Des aides jusqu'à 22 000 € pour l'installation</title>
         <meta
           name="description"
-          content="Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide pour financer un monte-escalier. Des aides jusqu'à 22 000 € pour améliorer votre autonomie à domicile. Estimation gratuite en 2 minutes."
+          content="Bénéficiez de MaPrimeAdapt' pour financer votre monte-escalier. Testez votre éligibilité et recevez une offre personnalisée gratuite."
         />
       </Helmet>
       <StructuredData />
