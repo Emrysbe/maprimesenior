@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
 
             <h1 id="devis" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
-              Vérifiez votre éligibilité à MaPrimeAdapt' et estimez le montant de votre aide
+              Monte-Escalier avec MaPrimeAdapt' : Offre Personnalisée jusqu'à 22 000€
             </h1>
 
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary rounded-lg p-4 md:p-6">
