@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
 
             <h1 id="devis" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight text-balance">
-              Monte-Escalier avec MaPrimeAdapt' : Offre Personnalisée jusqu'à 22 000€
+              MaPrimeAdapt' : votre offre personnalisée pour l'installation d'un monte-escalier
             </h1>
 
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary rounded-lg p-4 md:p-6">
