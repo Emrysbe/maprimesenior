@@ -6,7 +6,7 @@ const MaPrimeAdaptSection = () => {
     {
       icon: Euro,
       title: "Jusqu'à 22 000€ d'aides",
-      description: "L'État peut prendre en charge jusqu'à 70% du coût de votre monte-escalier, soit jusqu'à 22 000€ selon vos revenus.",
+      description: "L'État finance jusqu'à 70% du coût, soit 22 000€ maximum.",
     },
     {
       icon: Users,
