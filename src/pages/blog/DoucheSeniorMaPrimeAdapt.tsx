@@ -13,7 +13,7 @@ const DoucheSeniorMaPrimeAdapt = () => {
   return (
     <>
       <Helmet>
-        <title>Douche Senior Ma Prime Adapt' : Guide Complet 2024 | Mon Aide Senior</title>
+        <title>Douche Senior Ma Prime Adapt' : Guide Complet 2026 | Mon Aide Senior</title>
         <meta
           name="description"
           content="Remplacez votre baignoire par une douche sécurisée senior avec Ma Prime Adapt'. Jusqu'à 70% d'aide financière. Guide complet et accompagnement gratuit."
@@ -39,7 +39,7 @@ const DoucheSeniorMaPrimeAdapt = () => {
                 <header className="mb-8">
                   <time className="text-gray-500 mb-4 block">21 janvier 2026</time>
                   <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Douche Senior Ma Prime Adapt' : Tout Ce Qu'il Faut Savoir en 2024
+                    Douche Senior Ma Prime Adapt' : Tout Ce Qu'il Faut Savoir en 2026
                   </h1>
                   <img
                     src="https://images.pexels.com/photos/6315801/pexels-photo-6315801.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -88,7 +88,7 @@ const DoucheSeniorMaPrimeAdapt = () => {
                   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Ma Prime Adapt' : L'aide financière pour votre douche senior</h2>
 
                   <p className="text-gray-700 mb-4">
-                    Ma Prime Adapt' est l'aide de référence de l'État pour financer les travaux d'adaptation de la salle de bain. Lancée en 2024, elle simplifie et unifie les anciennes aides (Habiter Facile de l'Anah, crédit d'impôt...).
+                    Ma Prime Adapt' est l'aide de référence de l'État pour financer les travaux d'adaptation de la salle de bain. Lancée en 2024 et toujours en vigueur en 2026, elle simplifie et unifie les anciennes aides (Habiter Facile de l'Anah, crédit d'impôt...).
                   </p>
 
                   <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">Qui peut bénéficier de Ma Prime Adapt' pour une douche senior ?</h3>
