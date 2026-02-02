@@ -1,15 +1,22 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { Tables } from "@/integrations/supabase/types";
+import { format } from "date-fns";
+import { fr } from "date-fns/locale";
 import maPrimeAdaptImage from "@/assets/image_ma_prime_adapt_2.jpg";
 import monteEscalierImage from "@/assets/photo_blog_monte_escalier_droit_ou_tournant_.jpg";
 import autonomieImage from "@/assets/photo_blog_autonomie_a_domicile_.jpg";
 import installationImage from "@/assets/photo_blog_installation_monte_escalier_.jpg";
 
-const blogPosts = [
+type Article = Tables<'articles'>;
+
+const legacyPosts = [
   {
     slug: "douche-senior-ma-prime-adapt-guide-complet",
     title: "Douche Senior Ma Prime Adapt' : Tout Ce Qu'il Faut Savoir en 2024",
@@ -48,6 +55,36 @@ const blogPosts = [
 ];
 
 const Blog = () => {
+  const [dbArticles, setDbArticles] = useState<Article[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    loadArticles();
+  }, []);
+
+  const loadArticles = async () => {
+    const { data, error } = await supabase
+      .from('articles')
+      .select('*')
+      .eq('published', true)
+      .order('published_at', { ascending: false });
+
+    if (!error && data) {
+      setDbArticles(data);
+    }
+    setIsLoading(false);
+  };
+
+  const allPosts = [
+    ...dbArticles.map(article => ({
+      slug: article.slug,
+      title: article.title,
+      excerpt: article.excerpt,
+      publishedAt: format(new Date(article.published_at), 'dd MMMM yyyy', { locale: fr }),
+      imageUrl: article.image_url || 'https://images.pexels.com/photos/4057693/pexels-photo-4057693.jpeg?auto=compress&cs=tinysrgb&w=800',
+    })),
+    ...legacyPosts,
+  ];
   return (
     <>
       <Helmet>
@@ -74,7 +111,12 @@ const Blog = () => {
               </div>
 
               <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
-                {blogPosts.map((post) => (
+                {isLoading ? (
+                  <div className="col-span-2 text-center py-8">
+                    <p className="text-gray-600">Chargement des articles...</p>
+                  </div>
+                ) : (
+                  allPosts.map((post) => (
                   <Link
                     key={post.slug}
                     to={`/blog/${post.slug}`}
@@ -102,7 +144,8 @@ const Blog = () => {
                       </CardContent>
                     </Card>
                   </Link>
-                ))}
+                  ))
+                )}
               </div>
             </div>
           </section>
