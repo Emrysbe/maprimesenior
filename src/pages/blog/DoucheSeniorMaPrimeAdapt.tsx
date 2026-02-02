@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowLeft, Check, Phone, FileText, Clock } from "lucide-react";
+import { ArrowLeft, Check, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DoucheSeniorMaPrimeAdapt = () => {
@@ -53,18 +53,6 @@ const DoucheSeniorMaPrimeAdapt = () => {
                     Remplacer votre baignoire par une douche sécurisée senior est l'un des aménagements les plus demandés pour maintenir l'autonomie à domicile. Grâce à Ma Prime Adapt', cette transformation peut être financée jusqu'à 70% par l'État. Découvrez tout ce que vous devez savoir pour en bénéficier.
                   </p>
 
-                  <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-lg">
-                    <p className="text-gray-800 font-semibold mb-2 flex items-center gap-2">
-                      <Check className="w-5 h-5 text-blue-600" />
-                      Mon Aide Senior vous accompagne gratuitement
-                    </p>
-                    <p className="text-gray-700 mb-4">
-                      De l'évaluation de votre éligibilité au versement de l'aide, notre équipe gère toutes vos démarches administratives. Simple, rapide et sans frais.
-                    </p>
-                    <Button onClick={scrollToForm} className="bg-blue-600 hover:bg-blue-700">
-                      Tester mon éligibilité gratuitement
-                    </Button>
-                  </div>
 
                   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Pourquoi installer une douche sécurisée senior ?</h2>
 
@@ -170,70 +158,6 @@ const DoucheSeniorMaPrimeAdapt = () => {
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Comment obtenir Ma Prime Adapt' pour votre douche senior ?</h2>
-
-                  <p className="text-gray-700 mb-4">
-                    Mon Aide Senior vous accompagne à chaque étape pour simplifier vos démarches et maximiser vos aides.
-                  </p>
-
-                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">Les étapes avec Mon Aide Senior</h3>
-
-                  <div className="space-y-4 mb-8">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Évaluation gratuite de votre éligibilité</h4>
-                        <p className="text-gray-700">En 2 minutes, nous vérifions si vous pouvez bénéficier de Ma Prime Adapt' et estimons le montant de votre aide.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Visite technique à domicile</h4>
-                        <p className="text-gray-700">Un professionnel agréé se déplace gratuitement pour évaluer vos besoins et établir un devis personnalisé.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Constitution du dossier</h4>
-                        <p className="text-gray-700">Nous réunissons tous les documents nécessaires et déposons votre demande auprès de l'Anah.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">4</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Notification d'accord</h4>
-                        <p className="text-gray-700">Une fois votre dossier validé par l'Anah, vous recevez l'accord de financement (délai moyen : 2 à 4 mois).</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">5</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Installation de votre douche senior</h4>
-                        <p className="text-gray-700">Un artisan qualifié RGE procède au remplacement de votre baignoire par une douche sécurisée.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">6</div>
-                      <div>
-                        <h4 className="font-bold text-gray-900 mb-1">Versement de l'aide</h4>
-                        <p className="text-gray-700">Après envoi des factures, Ma Prime Adapt' est versée directement sur votre compte bancaire.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-xl my-8 text-center">
-                    <Phone className="w-12 h-12 mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-3">Vous avez des questions ?</h3>
-                    <p className="text-blue-100 mb-6 text-lg">
-                      Nos conseillers Mon Aide Senior sont à votre écoute pour vous guider dans votre projet d'adaptation de salle de bain.
-                    </p>
-                    <Button onClick={scrollToForm} variant="secondary" size="lg">
-                      Obtenir un accompagnement gratuit
-                    </Button>
-                  </div>
-
                   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Les autres aides cumulables avec Ma Prime Adapt'</h2>
 
                   <p className="text-gray-700 mb-4">
@@ -251,8 +175,7 @@ const DoucheSeniorMaPrimeAdapt = () => {
                   </ul>
 
                   <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8 rounded-r-lg">
-                    <p className="text-gray-800 font-semibold mb-2 flex items-center gap-2">
-                      <FileText className="w-5 h-5 text-green-600" />
+                    <p className="text-gray-800 font-semibold mb-2">
                       Mon Aide Senior optimise vos financements
                     </p>
                     <p className="text-gray-700">
